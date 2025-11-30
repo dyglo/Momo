@@ -1,66 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mammoth Murals AI</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;800&family=Oswald:wght@400;500;700&family=Permanent+Marker&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              mammoth: {
-                yellow: '#FFD700', // Adjusted to a vibrant yellow
-                black: '#111111',
-                blue: '#4EA5D9', // For the services section
-                white: '#F9F9F9'
-              }
-            },
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              display: ['Anton', 'sans-serif'],
-              condensed: ['Oswald', 'sans-serif'],
-              handwriting: ['"Permanent Marker"', 'cursive'],
-            },
-            backgroundImage: {
-              'noise': "url('https://grainy-gradients.vercel.app/noise.svg')",
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mammoth Murals AI</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;800&family=Oswald:wght@400;500;700&family=Permanent+Marker&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            mammoth: {
+              yellow: '#FFD700', // Adjusted to a vibrant yellow
+              black: '#111111',
+              blue: '#4EA5D9', // For the services section
+              white: '#F9F9F9'
             }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Anton', 'sans-serif'],
+            condensed: ['Oswald', 'sans-serif'],
+            handwriting: ['"Permanent Marker"', 'cursive'],
+          },
+          backgroundImage: {
+            'noise': "url('https://grainy-gradients.vercel.app/noise.svg')",
           }
         }
       }
-    </script>
-    <style>
-      body {
-        background-color: #F9F9F9;
-        overflow-x: hidden;
-      }
-      .text-outline {
-        -webkit-text-stroke: 1px black;
-        color: transparent;
-      }
-      .text-outline-white {
-        -webkit-text-stroke: 1px white;
-        color: transparent;
-      }
-      /* Hide scrollbar for clean aesthetic */
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #111;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #FFD700;
-      }
-    </style>
+    }
+  </script>
+  <style>
+    body {
+      background-color: #F9F9F9;
+      overflow-x: hidden;
+    }
+
+    .text-outline {
+      -webkit-text-stroke: 1px black;
+      color: transparent;
+    }
+
+    .text-outline-white {
+      -webkit-text-stroke: 1px white;
+      color: transparent;
+    }
+
+    /* Hide scrollbar for clean aesthetic */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #111;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #FFD700;
+    }
+  </style>
   <script type="importmap">
 {
   "imports": {
@@ -78,7 +86,10 @@
 }
 </script>
 </head>
-  <body>
-    <div id="root"></div>
-  </body>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
 </html>
